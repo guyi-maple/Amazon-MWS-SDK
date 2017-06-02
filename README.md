@@ -1,4 +1,4 @@
-# amazon-mws
+# amazon-mws-java-sdk
 亚马逊MWS服务的Java-SDK封装
 
 项目使用了亚马逊提供的Java客户端，并将其以Maven的形式导入
