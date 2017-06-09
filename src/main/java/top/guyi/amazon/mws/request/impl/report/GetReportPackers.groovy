@@ -40,5 +40,4 @@ class GetReportPackers extends SuperRequestPackers<GetReportPackers,GetReportReq
         return this
     }
 
-
 }
