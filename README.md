@@ -36,6 +36,7 @@ guyi.amazon.mws.marketplaceId = <亚马逊MWS-marketplaceId>
 guyi.amazon.mws.charset = Shift_JIS #编码
 ```
 关于亚马逊MWS端点，请参见 [亚马逊MWS服务端点列表](http://blog.guyi-maple.space/2017/06/19/amazon-mws-server-list/)
+
 编码设置用于数据上传接口中，具体编码信息，请参见 [SubmitFeed Content-Type](http://docs.developer.amazonservices.com/zh_CN/feeds/Feeds_SubmitFeed.html#Feeds_SubmitFeed)
 
 # 开发者信息
@@ -204,7 +205,10 @@ GetMatchingProductForIdResponse，GetLowestOfferListingsForASINResponse，GetLow
 新增Response类，需要实现基类 SuperResponseHandler<P,R>
 
 实现类中的 pattern 方法表示处理返回的XML数据，请返回EntityData实体类的数组
+
 EntityData实体类中包含数据处理的正则表达式与Lambda表达式
+
+如果返回 null ，表示不进行处理
 
 示例代码如下
 
