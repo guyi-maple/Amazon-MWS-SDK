@@ -1,10 +1,6 @@
 # amazon-mws-java-sdk
 亚马逊MWS服务的Java-SDK封装
 
-此项目存在于Nexus私服中
-
-所以请在pom.xml中添加如下配置
-
 # 安装
 在pom.xml中添加依赖
 ``` xml
