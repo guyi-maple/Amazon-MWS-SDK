@@ -44,6 +44,9 @@ abstract class SuperResponseHandler<P,R> {
 
    abstract List<EntityData> pattern();
 
+   void over(){
+
+   }
 
    SuperResponseHandler init(P response,R request,AmazonConfigProvider config){
         String xml = this.getXML(response)
@@ -63,7 +66,7 @@ abstract class SuperResponseHandler<P,R> {
                 }
             }
         }
-
+       this.over()
         return this
     }
 }

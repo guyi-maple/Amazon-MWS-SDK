@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import top.guyi.amazon.mws.client.AmazonClientFactory
 import top.guyi.amazon.mws.client.SuperAmazonClient
+import top.guyi.amazon.mws.client.impl.OrdersClient
 import top.guyi.amazon.mws.client.impl.ProductsClient
 import top.guyi.amazon.mws.client.impl.ReportClient
 import top.guyi.amazon.mws.conf.AmazonConfigFactory
@@ -26,6 +27,11 @@ class AmazonMWSAutoConfigure {
     @Bean
     ProductsClient productsClient(){
         return new ProductsClient()
+    }
+
+    @Bean
+    OrdersClient ordersClient(){
+        return new OrdersClient()
     }
 
     @Bean

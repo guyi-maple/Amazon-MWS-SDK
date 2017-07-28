@@ -52,14 +52,28 @@
 
         <dependency>
             <groupId>com.amazonservices.mws</groupId>
+            <artifactId>upload-data</artifactId>
+            <version>2009-01-01</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonservices.mws</groupId>
             <artifactId>report</artifactId>
-            <version>2016-09-21</version>
+            <version>2009-01-01</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>
             <groupId>com.amazonservices.mws</groupId>
             <artifactId>products</artifactId>
             <version>2011-10-01</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonservices.mws</groupId>
+            <artifactId>orders</artifactId>
+            <version>2013-09-01</version>
         </dependency>
 
     </dependencies>
