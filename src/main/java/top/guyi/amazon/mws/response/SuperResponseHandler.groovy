@@ -8,7 +8,7 @@ import top.guyi.amazon.mws.response.entity.ResponseMetaData
  */
 abstract class SuperResponseHandler<P,R> {
 
-   class EntityData{
+   static class EntityData{
        String pattern
        Closure closure
 

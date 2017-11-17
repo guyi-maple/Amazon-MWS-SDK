@@ -1,9 +1,9 @@
 package top.guyi.amazon.mws.client
 
 import org.springframework.beans.factory.InitializingBean
+import org.springframework.beans.factory.annotation.Autowired
 import top.guyi.amazon.mws.conf.AmazonConfigFactory
 
-import javax.annotation.Resource
 
 /**
  * Created by 古逸 on 2017-05-24.
@@ -11,7 +11,7 @@ import javax.annotation.Resource
 
 class AmazonClientFactory implements InitializingBean{
 
-    @Resource
+    @Autowired
     List<SuperAmazonClient> clients
 
     private static amazonClients = [:]

@@ -5,10 +5,7 @@ import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl
 import top.guyi.amazon.mws.client.AmazonClientFactory
 import top.guyi.amazon.mws.client.SuperAmazonClient
 import top.guyi.amazon.mws.conf.AmazonConfigFactory
-import top.guyi.amazon.mws.conf.AmazonConfigProvider
 import top.guyi.amazon.mws.response.SuperResponseHandler
-
-import javax.annotation.Resource
 
 /**
  * Created by 古逸 on 2017-05-24.
